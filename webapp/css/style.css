@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* eerste foto */
+div#eerste{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template:
+            "a a a b b"
+            "c c d d d"
+            "e e e f f";
+    text-align: center;
+}
+#eerste div {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#eerste div#a {
+    grid-area: a;
+    background-color: rgba(32, 178, 170, 0.7);
+    border: 10px solid lightseagreen;
+}
+#eerste div#b {
+    grid-area: b;
+    background-color: rgba(85, 107, 47, 0.7);
+    border: 10px solid darkolivegreen;
+}
+#eerste div#c {
+    grid-area: c;
+    background-color: rgba(244, 164, 96, 0.7);
+    border: 10px solid rgb(244, 164, 96);
+}
+#eerste div#d {
+    grid-area: d;
+    background-color: rgba(255, 182, 193, 0.7);
+    border: 10px solid lightpink;
+}
+#eerste div#e {
+    grid-area: e;
+    background-color: rgba(240, 128, 128, 0.7);
+    border: 10px solid lightcoral;
+}
+#eerste div#f {
+    grid-area: f;
+    background-color: rgba(173, 216, 230, 0.7);
+    border: 10px solid lightblue;
+}
+/* tweede foto */
+div#tweede {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template:
+            "a a"
+            "a a"
+            "b c"
+            "b d";
+}
+#tweede div#een {
+    grid-area: a;
+    background-color: red;
+}
+#tweede div#twee {
+    grid-area: b;
+    background-color: greenyellow;
+}
+#tweede div#drie {
+    grid-area: c;
+    background-color: yellow;
+}
+#tweede div#vier {
+    grid-area: d;
+    background-color: blue;
+}
